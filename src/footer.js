@@ -7,7 +7,13 @@ export default function Footer()
 {
     const [buttonStates, setButtonStates] = useState([false, false, false]);
 
-    //const [buttonStates, setButtonStates] = useState(0);
+    // function setButton(number)
+    // {
+    //     let more = ["none", "none", "none"];
+    //     if (moreButton[number] === "none"){more[number] = "";}
+    //     else{more[number] = "none";}
+    //     setButtonStates(more);
+    // }
 
     return (
         <>
