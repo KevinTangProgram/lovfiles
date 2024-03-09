@@ -1,0 +1,101 @@
+.hover-underline-animation-white {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+  
+.hover-underline-animation-white::after 
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation-white:hover::after 
+{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.standardText
+{
+    color: white;
+    margin-bottom: 0;
+    margin-left: 30px;
+}
+
+.footerGrid
+{
+    display: grid;
+    padding-bottom: 20px;
+    background-color: black;
+    grid-template-columns: 25% 25% 20% 30%;
+}
+
+.footerGridSmall
+{
+    display: none;
+    padding-bottom: 20px;
+    background-color: black;
+    grid-template-columns: 100%;
+}
+
+@media only screen and (max-width: 1800px) {
+    .footerGrid
+    {
+        grid-template-columns: 25% 25% 15% 35%;
+    }
+}
+
+@media only screen and (max-width: 1560px) {
+    .footerGrid
+    {
+        grid-template-columns: 20% 25% 15% 40%;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .footerGrid
+    {
+        grid-template-columns: 20% 20% 15% 45%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .footerGrid
+    {
+        display: none;
+    }
+    .footerGridSmall
+    {
+        display: grid;
+    }
+}
+
+.smallButtonExt
+{
+    background-color: transparent;
+    border: none;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.smallButtonInt
+{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    width: 100%;
+}
+
+.buttonText
+{
+    margin-left: 0;
+    margin-right: auto;
+}

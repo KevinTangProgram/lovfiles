@@ -1,0 +1,65 @@
+.contactTable
+{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    margin-bottom: 50px;
+}
+
+textarea {
+    overflow:auto;
+    resize:none;
+    width: auto;
+    height:100px;
+    margin-bottom: 20px;
+}
+
+.redButton
+{
+    background-color: rgb(210, 47, 37);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.redButton:hover
+{
+    background-color: rgb(245, 74, 67);
+}
+
+#contactUsButton
+{
+    width: 160px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faqButton
+{
+    text-align: left;
+    background: transparent;
+    border: none;
+    border-radius: 0rem;
+    padding: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+}
+
+.faqButton:hover
+{
+    color: rgb(210, 47, 37);
+}
+
+.faqAnswer
+{
+    margin-left: 2%;
+    font-size: 18px;
+    color: gray;
+    padding: 0px 0px 16px 16px;
+}

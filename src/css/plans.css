@@ -1,0 +1,85 @@
+.downloadBoxAbout
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 0rem;
+    padding: 1rem;
+    text-decoration: none;
+    width: 150px;
+    height: 25px;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.downloadOutlineAbout
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.hover-highlight-animation-download {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+  
+.hover-highlight-animation-download::after 
+{
+    content: '';
+    padding-top: 17px;
+    color: white;
+    position: absolute;
+    width: 101%;
+    transform: scaleY(0);
+    height: 42px;
+    margin-top: -17px;
+    text-align: center;
+    margin-left: calc(-100% + 27.25px);
+    background-color: black;
+    transform-origin: top;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-highlight-animation-download:hover::after 
+{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    content: 'Download Plan';
+}
+
+.planFlex
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.planImage
+{
+    width: 80%;
+}
+
+.planGrid
+{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 5vh;
+}
+
+.planh1
+{
+    font-size: 36px;
+}
+
+.planp1
+{
+    font-size: 20px;
+}

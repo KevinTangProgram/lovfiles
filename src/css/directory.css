@@ -1,0 +1,78 @@
+/* (A) RESPONSIVE IMAGE */
+.directoryImage {
+  position: relative; /* required for (b1) */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  overflow: hidden;
+}
+
+.directoryImage img {
+transition: transform .5s ease;
+height: 300px;
+width: 237.5px;
+object-fit: cover;
+}
+
+.directoryImage:hover img {
+    transform: scale(1.1);
+  }
+ 
+/* (B) POSITION CAPTION */
+.directoryText {
+  /* (B1) COVER OVER ENTIRE IMAGE */
+  position: absolute; top: -10%; left: -5%;
+  width: 90%; height: 110%;
+  background-color: white;
+  border-top: 1px solid #187cb8;
+ 
+  /* (B2) CENTER CONTENT */
+  display: flex; /*justify-content: center; align-items: center;*/
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  line-height: 150%;
+  padding-top: 10%;
+}
+ 
+/* (C) ONLY SHOW CAPTION ON HOVER */
+.directoryText {
+  visibility: none; opacity: 0;
+  transition: all .5s ease-in-out;
+}
+.directoryImage:hover .directoryText {
+  visibility: visible; opacity: 1;
+  animation: fade-in-up 0.3s linear forwards;
+}
+
+@keyframes fade-in-up
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.directoryLearnMore
+{
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.directoryLearnMore:hover
+{
+    color: #1fa7eb;
+    border-color: #1fa7eb;
+}

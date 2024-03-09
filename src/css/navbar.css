@@ -1,0 +1,164 @@
+.navigationBar
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+.topGrid
+{
+    display: grid;
+    margin: 1em;
+    margin-left: 2em;
+}
+
+@media only screen and (max-width: 950px) {
+    .topGrid
+    {
+        display: none;
+    }
+}
+
+.toggle-button
+{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 21px;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.toggle-button .bar
+{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+nav ul1
+{
+    background-color: white;
+    padding-top: 35px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    border-bottom-right-radius: 15px;
+    /* border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px; */
+}
+
+@media only screen and (max-width: 950px) {
+    .toggle-button
+    {
+        display: flex;
+    }
+
+    nav ul
+    {
+        display: none;
+    }
+
+    nav ul1
+    {
+        display: inline;
+        z-index: 1;
+        background-color: white;
+    }
+}
+
+.fitSize
+{
+    position: absolute;
+    width: 80px;
+    margin-left: 1em;
+}
+
+nav ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav li
+{
+    list-style: none;
+    padding: 10px;
+    margin: 0 10px;
+    animation-fill-mode: forwards;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+  
+.hover-underline-animation::after 
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation:hover::after 
+{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.hover-underline-animation-white {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+  
+.hover-underline-animation-white::after 
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation-white:hover::after 
+{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

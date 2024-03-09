@@ -1,0 +1,28 @@
+#paragraph1
+{
+    width: 70%;
+}
+
+.homepageStructure
+{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+@media only screen and (max-width: 1300px) {
+    #paragraph1
+    {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #paragraph1
+    {
+        width: 80%;
+    }
+    .homepageStructure
+    {
+        grid-template-columns: 100%;
+    }
+}
